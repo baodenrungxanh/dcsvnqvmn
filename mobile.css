@@ -11318,7 +11318,7 @@ video-js.vjs-ended .vjs-big-play-button, .video-js.vjs-paused .vjs-big-play-butt
     transition: opacity .2s;
     outline: 0;
     color: #fff;
-    font-size: 55px;
+    font-size: 75px;
     line-height: 55px;
     text-align: center;
     text-shadow: 0 0 5px rgba(0,0,0,.2);
