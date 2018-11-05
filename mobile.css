@@ -11310,20 +11310,19 @@ video-js.vjs-ended .vjs-big-play-button, .video-js.vjs-paused .vjs-big-play-butt
 
 
 .video-js .vjs-big-play-button {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: -1em;
     transform-origin: 50% 50%;
     transition: opacity .2s;
     outline: 0;
     color: #fff;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 55px;
+    line-height: 55px;
     text-align: center;
     text-shadow: 0 0 5px rgba(0,0,0,.2);
     transition: background-color .2s ease;
-    background-color: rgba(0,0,0,.15);
 }
 
     .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
