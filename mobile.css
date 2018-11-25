@@ -7559,17 +7559,35 @@ main {
     -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+    width: 100%;
+    height: auto;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
 }
 
     .menu ul {
-        padding: 0;
+        z-index: 10000;
+        display: table;
+        float: left;
+        width: 100%;
+        margin: 0;
         list-style-type: none;
+        padding: 0px;
     }
 
         .menu ul li {
-            float: left;
-            height: 30px;
+            float: initial;
+            display: table-cell;
+            list-style: none;
+            width: auto;
+            white-space: nowrap;
+            text-align: center;
+            vertical-align: middle;
+            height: 40px;
             position: relative;
+            padding: 0px 10px;
         }
 
             .menu ul li a {
@@ -7594,9 +7612,31 @@ main {
                     height: 16px;
                 }
 
-                .menu ul li a div{
+                .menu ul li a div {
                     margin-bottom: 5px;
                 }
+
+#sticker::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 52px;
+    z-index: 10;
+    background: rgba(255,255,255,0);
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(0,0,0,.3) 100%);
+    background: -webkit-gradient(left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(0,0,0,.3)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(0,0,0,.3) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(0,0,0,.3) 100%);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(0,0,0,.3) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(0,0,0,.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#000000',GradientType=1);
+}
+
+.headroom--not-top .container::after {
+}
 
 .sub-menu {
     background: #f7f7f7;
@@ -7614,7 +7654,7 @@ main {
         }
 
 .header a {
-    color: #222 !important;
+    color: #FFF !important;
 }
 
 .mobile .header {
@@ -7792,54 +7832,6 @@ main {
     margin: 0px;
     background-color: #16171b;
     border: 0px;
-}
-
-
-
-@media (max-width: 800px) {
-    .menu {
-        width: 100%;
-        height: auto;
-        top: 0;
-        position: relative;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-
-        .menu .container {
-            padding: 0px;
-        }
-
-        .menu ul {
-            z-index: 10000;
-            display: table;
-            float: left;
-            padding: 0;
-            width: 100%;
-            margin: 0;
-        }
-
-            .menu ul li {
-                float: initial;
-                display: table-cell;
-                list-style: none;
-                width: 25%;
-                white-space: nowrap;
-                position: relative;
-                text-align: center;
-                vertical-align: middle;
-                height: 35px;
-            }
-
-
-        .menu::-webkit-scrollbar {
-            display: none;
-        }
-        /* optional: show position indicator in red */
-        .menu::-webkit-scrollbar-thumb {
-            height: 0px;
-        }
 }
 
 
