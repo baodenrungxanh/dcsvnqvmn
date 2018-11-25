@@ -7545,6 +7545,7 @@ main {
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    background: linear-gradient(141deg, #2cb5e8 0%, #0fb8ad 51%, #0fb8ad 75%);
 }
 
 .sitename {
@@ -7553,8 +7554,11 @@ main {
 }
 
 .menu {
-    background: linear-gradient(141deg, #2cb5e8 0%, #0fb8ad 51%, #0fb8ad 75%);
+    background: #FFF;
     height: 30px;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
 }
 
     .menu ul {
@@ -7569,22 +7573,19 @@ main {
         }
 
             .menu ul li a {
-                font-size: 14px;
-                line-height: 31px;
-                line-height: 3.1rem;
+                font-size: 15px;
                 height: 30px;
                 cursor: pointer;
                 font-weight: 400;
                 display: block;
                 padding: 0 11px;
-                color: #fff;
-                text-transform: uppercase;
+                color: #626262;
                 font-style: normal;
                 font-family: inherit;
             }
 
                 .menu ul li a.active {
-                    background-color: #0e6e79;
+                    color: #109D5A;
                     text-decoration: none;
                 }
 
@@ -7823,7 +7824,6 @@ main {
             }
 
                 .menu ul li a {
-                    font-size: 1.6rem;
                     line-height: 4rem;
                     height: 35px;
                 }
@@ -9443,7 +9443,7 @@ slideDown {
         background-size: 103px 325px;
     }
 
-.comments-dialog .modal-body{
+.comments-dialog .modal-body {
     padding: 0px;
 }
 
