@@ -11812,6 +11812,13 @@ main {
         color: #aaa;
     }
 
+    .search-bar .btn-back-search {
+        font-size: 31px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 0;
+    }
+
 
 .animated.slideUp {
     display: none;
