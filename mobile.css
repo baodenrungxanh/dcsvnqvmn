@@ -10503,7 +10503,7 @@ main {
             }
 
                 .menu ul li a.active {
-                    color: #ed4040;
+                    color: rgb(255,0,0);
                     text-decoration: none;
                 }
 
@@ -11045,7 +11045,7 @@ main {
 
     .icn.link {
         background-position: -45px -445px;
-        background-color: #ed4040;
+        background-color: rgb(255,0,0);
     }
 
     .icn.close {
@@ -11728,7 +11728,7 @@ main {
 
     .icn.link {
         background-position: -45px -445px;
-        background-color: #ed4040
+        background-color: rgb(255,0,0)
     }
 
     .icn.close {
@@ -11784,7 +11784,7 @@ main {
 
     .search-bar form {
         padding: 6px 15px 6px 15px;
-        background: #ed4040;
+        background: rgb(255,0,0);
     }
 
     .search-bar input {
@@ -11927,7 +11927,7 @@ slideDown {
 
 
 .navbar .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-    color: #ed4040;
+    color: rgb(255,0,0);
     cursor: default;
     background-color: #fff;
     border: 0;
