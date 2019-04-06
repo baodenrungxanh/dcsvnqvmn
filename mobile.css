@@ -10503,7 +10503,7 @@ main {
             }
 
                 .menu ul li a.active {
-                    color: rgb(255,0,0);
+                    color: #339af0;
                     text-decoration: none;
                 }
 
@@ -11045,7 +11045,7 @@ main {
 
     .icn.link {
         background-position: -45px -445px;
-        background-color: rgb(255,0,0);
+        background-color: #009688;
     }
 
     .icn.close {
@@ -11728,7 +11728,7 @@ main {
 
     .icn.link {
         background-position: -45px -445px;
-        background-color: rgb(255,0,0)
+        background-color: #009688
     }
 
     .icn.close {
@@ -11749,7 +11749,7 @@ main {
     text-align: center;
     font-size: 16px;
     color: #000;
-    content: "Đang tải bình luận";
+    content: "Äang táº£i bÃ¬nh luáº­n";
     display: block
 }
 
@@ -11784,7 +11784,7 @@ main {
 
     .search-bar form {
         padding: 6px 15px 6px 15px;
-        background: rgb(255,0,0);
+        background: #228be6;
     }
 
     .search-bar input {
@@ -11927,7 +11927,7 @@ slideDown {
 
 
 .navbar .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-    color: rgb(255,0,0);
+    color: #4285f4;
     cursor: default;
     background-color: #fff;
     border: 0;
