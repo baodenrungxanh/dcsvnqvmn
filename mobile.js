@@ -151,7 +151,6 @@ function requestLoadMore() {
 
 
         eval(responseDOM.find("#ids").html());
-
         getArticleStatistics();
 
         loadTimes++;
@@ -258,22 +257,21 @@ function displayBuildinComment(data) {
 }
 
 function getArticleStatistics() {
-
     if (typeof ids == 'undefined') return;
 
     var currentIds = ids;
 
-
     if (typeof (currentIds) != "undefined") {
+
         var keyIndex = [];
-        var queryGraph = "https://graph.facebook.com/?ids=";
+        var queryGraph = "https://graph.facebook.com/?access_token=2265496703525899|auX-rFk0XjjhmrgJwI3Y_5OajtI&fields=engagement&ids=";
 
         for (var i = 0; i < currentIds.length; i++) {
             var postUrl = $("#id-" + currentIds[i] + " a")[0].href;
             queryGraph += postUrl + ",";
             keyIndex.push(postUrl);
         }
-
+        // Document lấy số lượng like/comment của 1 Url: https://developers.facebook.com/docs/graph-api/reference/v3.3/url
         queryGraph = queryGraph.substring(0, queryGraph.length - 1)
         $.ajax({
             url: queryGraph,
@@ -282,9 +280,9 @@ function getArticleStatistics() {
                 for (var i = 0; i <= keyIndex.length - 1; i++) {
 
                     var record = data[keyIndex[i]];
-                    if (typeof (record.share) != "undefined") {
+                    if (typeof (record.engagement) != "undefined") {
                         if (document.getElementById('total-share-' + currentIds[i]) != null) {
-                            var likeContent = (record.share.share_count == 0) ? "" : (record.share.share_count + " Chia sẽ");
+                            var likeContent = (record.engagement.share_count == 0) ? "" : (record.engagement.share_count + " Chia sẽ");
                             if (likeContent != "") {
                                 $('#s-c-' + currentIds[i]).show();
                                 document.getElementById('total-share-' + currentIds[i]).innerHTML = "<a href='" + keyIndex[i] + "'>" + likeContent + "</a>";
@@ -292,14 +290,14 @@ function getArticleStatistics() {
                             }
                         }
 
-                        if (document.getElementById('total-comments-' + currentIds[i]) != null && record.share.comment_count > 0) {
+                        if (document.getElementById('total-comments-' + currentIds[i]) != null && record.engagement.comment_count > 0) {
                             $('#total-comments-' + currentIds[i]).addClass('has-comment');
 
                             if (eval("typeof article" + currentIds[i] + " != 'undefined'")) {
                                 if (eval("article" + currentIds[i] + ".totalComments") > 0) {
                                     $('#total-comments-' + currentIds[i]).addClass('has-comment');
 
-                                    var totalComments = (record.share.comment_count + eval("article" + currentIds[i] + ".totalComments"));
+                                    var totalComments = (record.engagement.comment_count + eval("article" + currentIds[i] + ".totalComments"));
                                     document.getElementById('total-comments-' + currentIds[i]).innerHTML = totalComments + " Bình luận";
                                 }
                             }
