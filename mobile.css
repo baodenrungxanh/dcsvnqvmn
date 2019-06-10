@@ -10293,6 +10293,7 @@ main {
     padding: 10px;
     margin: 0px;
     line-height: 22px;
+
 }
 
 .news-container article .article-social-button-container {
@@ -10391,6 +10392,7 @@ main {
     padding-bottom: 5px;
     font-size: 18px !important;
     color: #333 !important;
+    word-wrap: break-word;
 }
 
 .video-title {
