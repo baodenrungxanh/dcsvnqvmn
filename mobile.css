@@ -14299,3 +14299,14 @@ video-js.vjs-ended .vjs-big-play-button, .video-js.vjs-paused .vjs-big-play-butt
 
 
 /*#endregion */
+
+/*#region Khung điều hướng ở dưới màn hình */
+
+.bottom-navigation {
+    border-top: 1px solid #e1e1e1;
+}
+
+    .bottom-navigation .menu ul li a {
+    }
+
+/*#endregion */
