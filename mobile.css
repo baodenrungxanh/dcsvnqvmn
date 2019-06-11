@@ -10293,7 +10293,6 @@ main {
     padding: 10px;
     margin: 0px;
     line-height: 22px;
-
 }
 
 .news-container article .article-social-button-container {
@@ -10495,7 +10494,7 @@ main {
             .menu ul li a {
                 font-size: 14px;
                 cursor: pointer;
-                font-weight: 400;
+                font-weight: 500;
                 display: block;
                 color: #626262;
                 font-style: normal;
