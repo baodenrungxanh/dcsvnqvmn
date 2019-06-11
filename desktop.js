@@ -206,7 +206,7 @@ function suggestHotArticle() {
 
             window.localStorage.setItem('seenHotIds', seenHotIds);
 
-            $.get('https://www.tatlon.com/search?q=' + searchQuery, function (response) {
+            $.get('https://www.cuoida.com/search?q=' + searchQuery, function (response) {
                 var responseDOM = $(response);
                 $("#post-list").append(responseDOM.find("#post-list").html());
 
